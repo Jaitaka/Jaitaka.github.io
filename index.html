@@ -17,13 +17,23 @@
   <style>
     .jumbotron {
       background-color: aquamarine;
-      margin-right: auto;
+      padding: 2rem 1rem;
     }
     .jumbotron h1 {
       font-family: Arial, Helvetica, sans-serif;
     }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .body {
+      min-height: 20000;
+    }
   </style>
-  <body id="home">
+  <body
+    id="home"
+    style="min-height: 2000"
+  >
     <!-- navbar -->
     <nav
       class="navbar navbar-expand-lg navbar-light fixed-top"
@@ -62,8 +72,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="#"
-                id="produk"
+                href="#produk"
                 >Produk</a
               >
             </li>
@@ -85,16 +94,20 @@
     </section>
     <!-- tutup jumbotron -->
     <!-- Produk -->
-    <sec class="produk">
+    <sec
+      class="produk"
+      id="produk"
+    >
       <div class="container text-center">
         <h2 class="pb-0 mb-0">Produk</h2>
         <div class="row justify-content-evenly pt-0 mt-0">
           <div class="col-4">
-            <img
-              src="img/game.png"
-              alt=""
-              width="300"
-            />
+            <a href="topupML.html"
+              ><img
+                src="img/game.png"
+                alt=""
+                width="300"
+            /></a>
           </div>
           <div class="col-4">
             <img
