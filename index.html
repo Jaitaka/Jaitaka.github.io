@@ -13,25 +13,24 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* .jumbotron {
+        background-color: aquamarine;
+      } */
+      .jumbotron h1 {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .body {
+        min-height: 20000;
+      }
+    </style>
   </head>
-  <style>
-    .body {
-      min-height: 20000px;
-    }
-    /* .jumbotron {
-      background-color: aquamarine;
-    } */
-    .jumbotron h1 {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    * {
-      margin: 0;
-      padding: 0;
-    }
-    .body {
-      min-height: 20000;
-    }
-  </style>
+
   <body id="home">
     <!-- navbar -->
     <nav
@@ -82,7 +81,7 @@
     <!-- tutup navbar -->
     <!-- jumbotron -->
     <section
-      class="jumbotron md text-center pb-2"
+      class="jumbotron text-center pb-2 pt-5"
       style="background-color: rgb(198, 255, 255)"
     >
       <img
@@ -100,10 +99,10 @@
       class="produk"
       id="produk"
     >
-      <div class="container text-center">
+      <div class="container-lg text-center">
         <h2 class="pb-0 mb-0">Produk</h2>
         <div class="row justify-content-evenly pt-0 mt-0 mb-1">
-          <div class="col-4 col-md-2 m-1">
+          <div class="col-4 col-lg-2 m-1">
             <a href="topupML.html"
               ><img
                 src="img/game.png"
@@ -111,14 +110,14 @@
                 width="300"
             /></a>
           </div>
-          <div class="col-4 col-md-2 m-1">
+          <div class="col-4 col-lg-2 m-1">
             <img
               src="img/kuota.png"
               alt=""
               width="300"
             />
           </div>
-          <div class="col-4 col-md-2 m-1">
+          <div class="col-4 col-lg-2 m-1">
             <img
               src="img/listrik.png"
               alt=""
@@ -130,7 +129,7 @@
     </sec>
     <!-- Tutup produk -->
     <footer
-      class="text-center p-2"
+      class="text-center"
       style="background-color: aqua"
     >
       Created by
