@@ -105,7 +105,7 @@
     <!-- pemesanan -->
     <section class="produk text-center">
       <form
-        action="#"
+        action="TopUP-ML"
         class="display: block"
       >
       <!-- id dan server -->
@@ -123,10 +123,13 @@
             </div>
             <div class="col-6 col-md-4">
               <input
-                type="text"
+                type="tel"
                 class="form-control"
                 placeholder="server"
                 aria-label="server"
+                required
+                minlength="4"
+                maxlength="4"
               />
             </div>
           </div>
@@ -142,7 +145,10 @@
             <div class="col-sm-6">
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="86 diamond">
-                <label class="form-check-label" for="86 diamond">
+                <label class="form-check-label border pilih-one" for="86 diamond">
+                  <img src="img/4.png" class="img-fluid" width="250" alt="">
+                </label>
+                <label class="form-check-label border border-primary d-none pilih-border" for="86 diamond">
                   <img src="img/4.png" class="img-fluid" width="250" alt="">
                 </label>
             </div>
@@ -233,5 +239,6 @@
           .catch((error) => console.error('Error!', error.message));
       });
     </script>
+    
   </body>
 </html>
