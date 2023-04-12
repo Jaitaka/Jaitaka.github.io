@@ -145,7 +145,7 @@
             <div class="col-sm-6">
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="86 diamond">
-                <label class="form-check-label border pilih-one" for="86 diamond">
+                <label class="form-check-label pilih-one" for="86 diamond">
                   <img src="img/4.png" class="img-fluid" width="250" alt="">
                 </label>
                 <label class="form-check-label border border-primary d-none pilih-border" for="86 diamond">
@@ -224,6 +224,7 @@
       const btnKirim = document.querySelector('.btn-kirim');
       const btnLoading = document.querySelector('.btn-loading');
       const myAlert = document.querySelector('.my-alert');
+      
       form.addEventListener('submit', (e) => {
         e.preventDefault();
         btnLoading.classList.toggle('d-none');
@@ -238,7 +239,21 @@
           })
           .catch((error) => console.error('Error!', error.message));
       });
+    
+      
     </script>
+    <!-- <script>
+      const pilihOne = document.querySelector('.pilih-one');
+      const pilihBorder = document.querySelector('.pilih-border');
+      const div = document.querySelector('.form-check');
+div.addEventListener('click', (e) => {
+      e.preventDefault(); 
+    pilihOne.classList.toggle('d-none');
+      pilihBorder.classList.toggle('d-none');
+        
+    })
+      
+    </script> -->
     
   </body>
 </html>
