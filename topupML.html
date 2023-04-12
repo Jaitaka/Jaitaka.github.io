@@ -105,8 +105,10 @@
     <!-- pemesanan -->
     <section class="produk text-center">
       <form
-        action="TopUP-ML"
+        action="#"
         class="display: block"
+        name="TopUP-ML"
+      autocomplete="off"
       >
       <!-- id dan server -->
         <h1 style="font-family: Arial, Helvetica, sans-serif">Data akun</h1>
@@ -119,6 +121,7 @@
                 placeholder="id"
                 aria-label="id"
                 required
+                name="user id"
               />
             </div>
             <div class="col-6 col-md-4">
@@ -130,6 +133,7 @@
                 required
                 minlength="4"
                 maxlength="4"
+                name="server"
               />
             </div>
           </div>
@@ -144,18 +148,15 @@
           <div class="row">
             <div class="col-sm-6">
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="86 diamond">
+                <input class="form-check-input" type="radio" name="diamondML" id="86 diamond" value="86 diamond">
                 <label class="form-check-label pilih-one" for="86 diamond">
-                  <img src="img/4.png" class="img-fluid" width="250" alt="">
-                </label>
-                <label class="form-check-label border border-primary d-none pilih-border" for="86 diamond">
                   <img src="img/4.png" class="img-fluid" width="250" alt="">
                 </label>
             </div>
           </div>
             <div class="col-sm-6">
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="172 diamond">
+                <input class="form-check-input" type="radio" name="diamondML" id="172 diamond" value="172 diamond">
                 <label class="form-check-label" for="172 diamond">
                   <img src="img/5.png" width="250" class="img-fluid" alt="">
                 </label>
@@ -163,7 +164,7 @@
           </div>
             <div class="col-sm-6">
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="257 diamond">
+                <input class="form-check-input" type="radio" name="diamondML" id="257 diamond" value="257 diamond">
                 <label class="form-check-label" for="257 diamond">
                   <img src="img/6.png" class="img-fluid" width="250" alt="">
                 </label>
@@ -171,7 +172,7 @@
           </div>
             <div class="col-sm-6">
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="706 diamond">
+                <input class="form-check-input" type="radio" name="diamondML" id="706 diamond" value="706 diamond">
                 <label class="form-check-label" for="706 diamond">
                   <img src="img/7.png" class="img-fluid" width="250" alt="" id="706 diamond">
                 </label>
@@ -184,11 +185,11 @@
           <div class="row justify-content-center">
             <div class="col-md-6">
               <label for="Payment" class="mb-2"><h3>Pilihan metode pembayaran</h3></label><br>
-              <select class="form-select" id="Payment" aria-label="Default select example">
+              <select class="form-select" name="payment" id="Payment" required aria-label="Default select example">
                 <option selected>Pilih metode pembayaran</option>
-                <option value="1">DANA</option>
-                <option value="2">Shopeepay</option>
-                <option value="3">OVO</option>
+                <option value="Qris">Qris</option>
+                
+
               </select>
             </div>
           </div>
@@ -199,12 +200,16 @@
           <div class="row justify-content-center">
             <div class="col-md-6">
               <label for="Nomor WA" class="form-label"><h4>Masukan Nomor WA</h4></label>
-              <input type="tel" class="form-control" id="Nomor WA" placeholder="628Xxxx">
+              <input type="tel" name="nomor WA" class="form-control" id="Nomor WA" required placeholder="628Xxxx" pattern="(\+62|62|)8[1-9][0-9]{6,9}$" oninvalid="this.setCustomValidity('JANGAN PAKAI 0, Tolong isi depannya pakai 62 atau +62')" oninput="this.setCustomValidity('')">
             </div>
           </div>
         </div>
         <!-- tutup kolom konfirmasi -->
-        <button class="btn btn-primary mt-4" type="submit">Pesan sekarang</button>
+        <button class="btn btn-primary mt-4 btn-kirim" type="submit">Pesan sekarang</button>
+        <button class="btn btn-primary btn-loading d-none mt-4" type="button" disabled>
+          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+          Loading...
+        </button>
       </form>
     </section>
     <!-- tutup pemesanan -->
@@ -219,7 +224,29 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbyAjmwuSrBD8gi2mvnByYAWEw2DZC92ZNcZCs-PssceXRfM1beyY5IFJDaHbM9_DVhLAg/exec';
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwN3aLqWmE-wkHcvT9Jp1U9KHOXZqMboL1_2raPXdphSD9kouUNHRBqvF00PxTEdA8Sxw/exec'
+      const form = document.forms['TopUP-ML']
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading');
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => { 
+            console.log('Success!', response)
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            form.reset();
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+
+    <!-- <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwN3aLqWmE-wkHcvT9Jp1U9KHOXZqMboL1_2raPXdphSD9kouUNHRBqvF00PxTEdA8Sxw/exec';
       const form = document.forms['TopUP-ML'];
       const btnKirim = document.querySelector('.btn-kirim');
       const btnLoading = document.querySelector('.btn-loading');
@@ -236,9 +263,9 @@
             myAlert.classList.toggle('d-none');
             form.reset();
             console.log('Success!', response);
-          })
-          .catch((error) => console.error('Error!', error.message));
-      });
+            .catch(error => console.error('Error!', error.message));
+        })
+      }); -->
     
       
     </script>
