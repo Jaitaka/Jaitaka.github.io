@@ -15,12 +15,6 @@ body {
   text-justify: auto;
 }
 
-.footer {
-  background-color: aqua;
-  margin: auto;
-  padding-bottom: 1rem;
-}
-
 .provider {
   width: 18rem;
   height: 18rem;
@@ -40,8 +34,7 @@ body {
   min-height: fit-content;
   justify-content: center;
   display: grid;
-  padding-top: 1rem;
-  margin-top: 1rem;
+
   margin-bottom: -3rem;
 }
 
@@ -60,4 +53,16 @@ body {
 
 .pilihan {
   margin-bottom: -4rem;
+  min-height: fit-content;
+}
+
+#provider {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer {
+  background-color: aqua;
+  margin-top: 10rem;
 }
