@@ -72,3 +72,15 @@ body {
 
   width: 8rem;
 }
+
+.idx {
+  display: grid;
+  justify-content: center;
+}
+
+.hm {
+  margin: auto;
+  margin-top: 4rem;
+
+  width: 8rem;
+}
