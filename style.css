@@ -21,7 +21,7 @@ body {
 }
 
 .card {
-  height: 5rem;
+  height: 7rem;
 }
 
 #kuota {
@@ -70,5 +70,5 @@ body {
   margin: 1rem auto;
   justify-content: center;
 
-  width: 6rem;
+  width: 8rem;
 }
