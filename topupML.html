@@ -108,9 +108,9 @@
         action="#"
         class="display: block"
         name="TopUP-ML"
-      autocomplete="off"
+        autocomplete="off"
       >
-      <!-- id dan server -->
+        <!-- id dan server -->
         <h1 style="font-family: Arial, Helvetica, sans-serif">Data akun</h1>
         <div class="container-sm text-center">
           <div class="row justify-content-center">
@@ -147,49 +147,122 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-6">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="diamondML" id="86 diamond" value="86 diamond">
-                <label class="form-check-label pilih-one" for="86 diamond">
-                  <img src="img/4.png" class="img-fluid" width="250" alt="">
+              <div class="plh form-check">
+                <label
+                  class="form-check-label"
+                  for="86 diamond"
+                >
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="diamondML"
+                    id="86 diamond"
+                    value="86 diamond"
+                  />
+                  <!-- <img src="img/4.png" class="pilih-one img-fluid" width="250" alt=""> -->
+                  <img
+                    src="img/4.png"
+                    class="bdr img-fluid"
+                    width="150"
+                    alt=""
+                  />
                 </label>
+              </div>
             </div>
-          </div>
             <div class="col-sm-6">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="diamondML" id="172 diamond" value="172 diamond">
-                <label class="form-check-label" for="172 diamond">
-                  <img src="img/5.png" width="250" class="img-fluid" alt="">
+              <div class="plh form-check">
+                <label
+                  class="form-check-label"
+                  for="172 diamond"
+                >
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="diamondML"
+                    id="172 diamond"
+                    value="172 diamond"
+                  />
+                  <img
+                    src="img/5.png"
+                    width="150"
+                    class="bdr img-fluid"
+                    alt=""
+                  />
+                  <!-- <img src="img/5.png" width="250" class="pilih-one img-fluid d-none" alt=""> -->
                 </label>
-            </div>
-          </div>
-            <div class="col-sm-6">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="diamondML" id="257 diamond" value="257 diamond">
-                <label class="form-check-label" for="257 diamond">
-                  <img src="img/6.png" class="img-fluid" width="250" alt="">
-                </label>
-            </div>
-          </div>
-            <div class="col-sm-6">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="diamondML" id="706 diamond" value="706 diamond">
-                <label class="form-check-label" for="706 diamond">
-                  <img src="img/7.png" class="img-fluid" width="250" alt="" id="706 diamond">
-                </label>
+              </div>
             </div>
           </div>
         </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="bdr form-check">
+                <label
+                  class="form-check-label"
+                  for="257 diamond"
+                >
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="diamondML"
+                    id="257 diamond"
+                    value="257 diamond"
+                  />
+                  <img
+                    src="img/6.png"
+                    class="img-fluid"
+                    width="150"
+                    alt=""
+                  />
+                </label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="bdr form-check">
+                <label
+                  class="form-check-label"
+                  for="706 diamond"
+                >
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="diamondML"
+                    id="706 diamond"
+                    value="706 diamond"
+                  />
+                  <img
+                    src="img/7.png"
+                    class="img-fluid"
+                    width="150"
+                    alt=""
+                    id="706 diamond"
+                  />
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- tutup pilihan produk -->
         <!-- Payment -->
-        <div class="containerb text-center mt-5">
+        <div class="container text-center mt-5">
           <div class="row justify-content-center">
             <div class="col-md-6">
-              <label for="Payment" class="mb-2"><h3>Pilihan metode pembayaran</h3></label><br>
-              <select class="form-select" name="payment" id="Payment" required aria-label="Default select example">
+              <label
+                for="Payment"
+                class="mb-2"
+                ><h3>Pilihan metode pembayaran</h3></label
+              ><br />
+              <select
+                class="form-select"
+                name="payment"
+                id="Payment"
+                required
+                aria-label="Default select example"
+              >
                 <option selected>Pilih metode pembayaran</option>
                 <option value="Qris">Qris</option>
-                
-
               </select>
             </div>
           </div>
@@ -199,15 +272,42 @@
         <div class="container text-center mt-3">
           <div class="row justify-content-center">
             <div class="col-md-6">
-              <label for="Nomor WA" class="form-label"><h4>Masukan Nomor WA</h4></label>
-              <input type="tel" name="nomor WA" class="form-control" id="Nomor WA" required placeholder="628Xxxx" pattern="(\+62|62|)8[1-9][0-9]{6,9}$" oninvalid="this.setCustomValidity('JANGAN PAKAI 0, Tolong isi depannya pakai 62 atau +62')" oninput="this.setCustomValidity('')">
+              <label
+                for="Nomor WA"
+                class="form-label"
+                ><h4>Masukan Nomor WA</h4></label
+              >
+              <input
+                type="tel"
+                name="nomor WA"
+                class="form-control"
+                id="Nomor WA"
+                required
+                placeholder="628Xxxx"
+                pattern="(\+62|62|)8[1-9][0-9]{6,9}$"
+                oninvalid="this.setCustomValidity('JANGAN PAKAI 0, Tolong isi depannya pakai 62 atau +62')"
+                oninput="this.setCustomValidity('')"
+              />
             </div>
           </div>
         </div>
         <!-- tutup kolom konfirmasi -->
-        <button class="btn btn-primary mt-4 btn-kirim" type="submit">Pesan sekarang</button>
-        <button class="btn btn-primary btn-loading d-none mt-4" type="button" disabled>
-          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+        <button
+          class="btn btn-primary mt-4 btn-kirim"
+          type="submit"
+        >
+          Pesan sekarang
+        </button>
+        <button
+          class="btn btn-primary btn-loading d-none mt-4"
+          type="button"
+          disabled
+        >
+          <span
+            class="spinner-border spinner-border-sm"
+            role="status"
+            aria-hidden="true"
+          ></span>
           Loading...
         </button>
       </form>
@@ -215,72 +315,53 @@
     <!-- tutup pemesanan -->
     <!--  -->
 
-    <footer class="text-center p-3 mt-5" style="background-color: aqua;">
-      Created by Jaitatsu
+    <footer class="footer mt-3">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <p class="p-2">Copyright &copy; Jaitatsu.</p>
+          </div>
+        </div>
+      </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbwN3aLqWmE-wkHcvT9Jp1U9KHOXZqMboL1_2raPXdphSD9kouUNHRBqvF00PxTEdA8Sxw/exec'
-      const form = document.forms['TopUP-ML']
-      const btnKirim = document.querySelector('.btn-kirim');
-      const btnLoading = document.querySelector('.btn-loading');
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault();
-        btnLoading.classList.toggle('d-none');
-        btnKirim.classList.toggle('d-none');
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => { 
-            console.log('Success!', response)
-            btnLoading.classList.toggle('d-none');
-            btnKirim.classList.toggle('d-none');
-            form.reset();
-          })
-          .catch(error => console.error('Error!', error.message))
-      })
-    </script>
-
-
-    <!-- <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbwN3aLqWmE-wkHcvT9Jp1U9KHOXZqMboL1_2raPXdphSD9kouUNHRBqvF00PxTEdA8Sxw/exec';
       const form = document.forms['TopUP-ML'];
       const btnKirim = document.querySelector('.btn-kirim');
       const btnLoading = document.querySelector('.btn-loading');
-      const myAlert = document.querySelector('.my-alert');
-      
+
       form.addEventListener('submit', (e) => {
         e.preventDefault();
         btnLoading.classList.toggle('d-none');
         btnKirim.classList.toggle('d-none');
         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
           .then((response) => {
+            console.log('Success!', response);
             btnLoading.classList.toggle('d-none');
             btnKirim.classList.toggle('d-none');
-            myAlert.classList.toggle('d-none');
             form.reset();
-            console.log('Success!', response);
-            .catch(error => console.error('Error!', error.message));
-        })
-      }); -->
-    
-      
+          })
+          .catch((error) => console.error('Error!', error.message));
+      });
     </script>
-    <!-- <script>
-      const pilihOne = document.querySelector('.pilih-one');
-      const pilihBorder = document.querySelector('.pilih-border');
-      const div = document.querySelector('.form-check');
-div.addEventListener('click', (e) => {
-      e.preventDefault(); 
-    pilihOne.classList.toggle('d-none');
-      pilihBorder.classList.toggle('d-none');
-        
-    })
-      
-    </script> -->
-    
+
+    <script>
+      const plh = document.querySelectorAll('.plh');
+      const bdr = document.querySelectorAll('.bdr');
+
+      for (let i = 0; i < plh.length; i++) {
+        plh[i].addEventListener('click', function (e) {
+          if (e.target.className == 'border') {
+            bdr.class = e.target.class;
+          }
+        });
+      }
+    </script>
   </body>
 </html>
