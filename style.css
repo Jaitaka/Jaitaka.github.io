@@ -21,8 +21,7 @@ body {
 }
 
 .card {
-  width: 7rem;
-  height: 9rem;
+  height: 5rem;
 }
 
 #kuota {
@@ -65,4 +64,11 @@ body {
 .footer {
   background-color: aqua;
   margin-top: 10rem;
+}
+
+.pro {
+  margin: 1rem auto;
+  justify-content: center;
+
+  width: 6rem;
 }
