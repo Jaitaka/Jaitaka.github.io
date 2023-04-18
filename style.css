@@ -1,7 +1,12 @@
+body {
+  min-height: fit-content;
+  min-width: fit-content;
+}
 * {
   padding: 0;
   margin: 0;
 }
+
 .jumbotron {
   background-color: rgb(198, 255, 255);
   padding-top: 1rem;
@@ -12,6 +17,8 @@
 
 .footer {
   background-color: aqua;
+  margin: auto;
+  padding-bottom: 2rem;
 }
 
 .provider {
@@ -24,11 +31,32 @@
   height: 9rem;
 }
 
-.carousel-sm {
-  width: 13rem;
-  margin: auto;
-}
-
 #kuota {
   margin-top: -1.5rem;
+}
+
+#coro {
+  min-width: fit-content;
+  min-height: fit-content;
+  justify-content: center;
+  display: grid;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  margin-bottom: -3rem;
+}
+
+#carouselExampleInterval {
+  padding-top: 3rem;
+}
+
+.carousel-inner {
+  min-height: fit-content;
+}
+
+.menu {
+  margin-bottom: -2rem;
+}
+
+.pilihan {
+  margin-bottom: -4rem;
 }
