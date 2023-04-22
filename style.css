@@ -68,8 +68,8 @@ body {
 
 .footer {
   background-color: aqua;
-  margin-bottom: -10;
-  position: fixed;
+  margin-bottom: -100rem;
+  position: static;
   bottom: 0;
   left: 0;
   right: 0;
@@ -112,9 +112,6 @@ body {
   margin-bottom: 20rem;
 }
 
-.conatiner-btn {
-  margin: 0 auto;
-}
 /* media queries */
 
 /* Laptop */
