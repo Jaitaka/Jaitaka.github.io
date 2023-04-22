@@ -68,11 +68,9 @@ body {
 
 .footer {
   background-color: aqua;
-  margin-bottom: -100rem;
-  position: static;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  margin-top: 40rem;
+  position:fixed
+  top: 8rem;
 }
 
 .pro {
