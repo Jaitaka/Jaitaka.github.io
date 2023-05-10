@@ -4,8 +4,8 @@
 }
 
 body {
-  min-height: fit-content;
-  min-width: fit-content;
+  /* min-height: fit-content; */
+  /* min-width: fit-content; */
   font: 16px/28px arial, sans-serif;
 }
 
@@ -69,8 +69,10 @@ body {
 .footer {
   background-color: aqua;
   margin-top: 40rem;
-  position:fixed
-  bottom: 0rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 .pro {
